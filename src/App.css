@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #ffffff;
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.App {
+  background: linear-gradient(-45deg, rgb(109, 39, 39), rgb(135, 41, 148), rgb(20, 89, 114),rgb(20, 114, 92)), repeat;
+  
+  animation: BGGradient 6s ease infinite;
+  background-size: 400% 400%;
+  position: absolute;
+  top: 0;
+  z-index: -10;
+}
+
+.app-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /*background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAP0lEQVQoU42Q0QoAIAgDz///aMPAKKeQb26HTg0tB6zKVUhI4Bus5tMn2K4Djh7gBGXM7Uvo5riQ/BfUNwwTWfn+Cgg4zkoRAAAAAElFTkSuQmCC) repeat;*/
+  background: url("/img/bg4.png");
+  z-index: -5;
+}
+
+/* Disable scrollbar (unused, may mislead user)
+::-webkit-scrollbar { 
+  display: none; 
+}
+*/
+
+h1, h2, h3 {
+  font-family: 'Major Mono Display', monospace;
+}
+
+.modal-active {
+  overflow: hidden; /* hides scrollbar */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.definition {
+  text-decoration: underline;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/*
+    Header
+*/
+
+.header {
+  max-width: 50%;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.header h1 {
+  background-image: -webkit-gradient(linear,0% 0%,50% 100%,from(#ff2c2c),to(#7a5e91));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.headline-bg {
+  border: 50px solid saddlebrown;
+  border-image: url("/img/waveform.png") fill 30% 15%;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 2em;  
+}
+
+.header p {
+  margin: 0 0 0.75em 0;
+  font-size: 1.2em;
+}
+
+/*
+    Page Layout
+*/
+
+.recordingContainer{
+  max-width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: auto;
+}
+
+.recording-margin {
+  position: relative;
+  float: left;
+  width: 20%;
+  padding: 2px 6px;
+  box-sizing: border-box;
+  margin: 4px 0;
+}
+
+.animate-in {
+  animation: recordingsSlideIn 0.9s ; 
+}
+
+.recording-margin:nth-child(5n + 1) {
+  padding-left: 0;
+} 
+
+
+.recording-margin:nth-child(5n - 5) {
+  padding-right: 0;
+} 
+
+.recording {
+  background: linear-gradient(130deg, #575677, #091224);
+  min-height: 370px;
+  max-height: 500px;
+  cursor: pointer;
+  /*filter: drop-shadow(4px 4px 2px black);*/
+}
+.recording p {
+  margin: 0;
+}
+
+.recording img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.recTileArtist {
+  color: #8f939c;
+}
+
+.recTileTitle {
+  font-style: italic;
+}
+
+.recTileYear {
+  font-weight: 700;
+}
+
+.recTileText {
+  padding: 0 0.5em;
+  margin: 0;
+  min-height: 64px;
+}
+
+/*
+    Menus
+*/
+
+.sort-menu h1 {
+  font-size: 1.5em;
+  padding: 0.5em 0.25em;
+  background-color: rgba(0, 0, 0, 50);
+  text-align: center;
+}
+
+.sort-menu button {
+  min-width: 25%;
+  min-height: 64px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: 700;
+  transition: 0.3s;
+  margin-bottom: 1em;
+}
+
+.sort-menu button:hover {
+  color: white;
+}
+
+.sort-menu button:hover:nth-child(2n) {
+  background-color: rgb(109, 39, 39);
+}
+
+.sort-menu button:hover:nth-child(3n) {
+  background-color: rgb(135, 41, 148);
+}
+
+.sort-menu button:hover:nth-child(4n) {
+  background-color: rgb(20, 89, 114);
+}
+
+.sort-menu button:hover:nth-child(5n) {
+  background-color: rgb(20, 114, 92);
+}
+
+/*
+    Modal
+*/
+
+.detail-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #7971ea
+}
+
+.modal-fullscreen {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAI0lEQVQYV2NkYGD4z8DA0MgABYwMDAwNMA6IRhaoB6nEUAEAn+YEBSiZxUoAAAAASUVORK5CYII=) repeat;
+}
+
+.modal-popup {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 0.4s;
+  animation-name: transformIn;
+  border: 5px #eee solid;
+  /*max-height: 80%;*/
+}
+
+.modal-container {
+  padding: 0 1em 1em 1em;
+  display: table;
+}
+
+/* https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-responsive-design/ */
+
+.youtube-wrapper {
+  position: relative;
+  /*padding-bottom: 56.25%;*/
+  padding-bottom: 400px;
+  padding-top: 35px;
+  height: 0;
+  width: 60%;
+  overflow: hidden;
+  display: table-cell;
+}
+
+.youtube-wrapper iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-left: 16px;
+}
+
+.rec-description {
+  font-size: 1.25em;
+  width: 35%;
+  display: table-cell;
+}
+
+.modal-container img {
+  width: 30%;
+}
+
+.modal-titles {
+  padding: 1em;
+}
+
+.modal-titles h1, h2, h3, h4, h5, h6 {
+  margin:  0 0 0.1em 0;
+}
+
+.modal-titles h1 {
+  font-size: 4em;
+}
+
+.modal-titles h2 {
+  font-size: 2em;
+}
+
+.modal-titles h3 {
+  font-size: 1.5em;
+}
+
+.close-modal-button {
+  background-color: red;
+  min-width: 32px;
+  min-height: 32px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 12px;
+  cursor: pointer;
+  background-image: url("/img/X.png");
+  background-size: cover;
+}
+
+/*
+    Page Bottom
+*/
+
+.credits {
+  color: #111;
+  padding: 2.4em;
+  margin: 2em auto 2em auto;
+  list-style-position: inside;
+  width: 25%;
+  border: 50px solid saddlebrown;
+  border-image: url("/img/waveform.png") fill 30% 15%;
+}
+
+.credits h2 {
+  text-align: center;
+  background-image: -webkit-gradient(linear,0% 0%,80% 100%,from(#ff2c2c),to(#7a5e91));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.credits ul {
+}
+
+.credits p {
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+.page-bottom {
+  background-color:#091224;
+  min-width: 100%;
+  cursor: pointer;
+  text-align: center;
+}
+
+.page-bottom h3 {
+  margin: 0;
+  padding: 1.2em 0;
+}
+
+/*
+    Animation
+*/
+
+@keyframes transformIn {
+  from {
+    transform: translate(-50%, 0%);
+  }
+
+  to {transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes transformInMobile {
+  from {
+    transform: translate(-50%, 0%);
+  }
+
+  to {transform: translate(-50%, -50%);
+  }
+}
+
+/* https://codepen.io/P1N2O/pen/pyBNzX */
+
+@keyframes BGGradient {
+  0% {
+      background-position: 0% 50%
+  }
+  50% {
+      background-position: 100% 50%
+  }
+  100% {
+      background-position: 0% 50%
+  }
+}
+
+@keyframes recordingsSlideIn {
+  0% {
+    transform:translate(0, -1em);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0,0);
+    opacity: 100%;
+  }
+}
+
+/* 
+    Mobile Styles 
+*/
+
+@media only screen and (max-width: 960px) {
+
+  .header h1 {
+    font-size: 1.4em;
+  }
+
+  .recordingContainer{
+    max-width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow: auto;
+  }
+
+  .sort-menu button {
+    display: block;
+    min-width: 100%;
+    min-height: 48px;
+    margin-bottom: 0;
+  }
+
+  .recording-margin:nth-child(5n + 1) {
+    padding-left: 6px;
+  } 
+  
+  .recording-margin:nth-child(5n - 5) {
+    padding-right: 6px;
+  } 
+
+  .recording-margin:nth-child(odd) {
+    padding-left: 0;
+  }
+
+  .recording-margin:nth-child(even) {
+    padding-right: 0;
+  }
+  
+  .modal-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    transform: none;
+    animation-name: none;
+    border: none;
+  }
+
+  .modal-titles h1 {
+    font-size: 2em;
+  }
+  
+  .modal-titles h2, h3 {
+    font-size: 1em;
+  }
+
+  .rec-description {
+    display: block;
+    width: 100%;
+    font-size: 1em;
+  }
+  .youtube-wrapper {
+    display: block;
+    width: 100%;
+  }
+
+  .youtube-wrapper iframe{
+    margin: 0;
+  }
+
+  .recording {
+    min-height: 400px;
+    max-height: 4%;
+  }
+
+  .recording-margin {
+    width: 50%;
+  }
+
+  .close-modal-button {
+    min-width: 50px;
+    min-height: 50px
+  }
+
+  .header {
+    max-width: 80%;
+  }
+
+  .credits {
+    width: 50%;
+  }
+
+  .page-bottom {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .recording {
+    min-height: 320px;
+  }
+}

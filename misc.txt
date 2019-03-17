@@ -1,0 +1,10 @@
+// HELP
+// https://codepen.io/aholachek/pen/gKjYNw?editors=1010
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+// https://react-flip-toolkit-demos.surge.sh/portal
+
+// good 
+// https://react-flip-toolkit-demos.surge.sh/flip-move
+// https://github.com/aholachek/react-flip-toolkit/blob/master/demo/src/FlipMove/index.js
+
+//https://codepen.io/emkk/pen/dGYXJO
