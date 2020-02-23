@@ -1,13 +1,21 @@
 {
-  "main.css": "./static/css/main.0cfa931a.chunk.css",
-  "main.js": "./static/js/main.a1d8acf2.chunk.js",
-  "main.js.map": "./static/js/main.a1d8acf2.chunk.js.map",
-  "static/js/1.edcdbf7e.chunk.js": "./static/js/1.edcdbf7e.chunk.js",
-  "static/js/1.edcdbf7e.chunk.js.map": "./static/js/1.edcdbf7e.chunk.js.map",
-  "runtime~main.js": "./static/js/runtime~main.4a686d48.js",
-  "runtime~main.js.map": "./static/js/runtime~main.4a686d48.js.map",
-  "static/css/main.0cfa931a.chunk.css.map": "./static/css/main.0cfa931a.chunk.css.map",
-  "index.html": "./index.html",
-  "precache-manifest.2768ef77c8dbea86e4b579819f947ca6.js": "./precache-manifest.2768ef77c8dbea86e4b579819f947ca6.js",
-  "service-worker.js": "./service-worker.js"
+  "files": {
+    "main.css": "/ElectronicMusicSite/static/css/main.006c0d76.chunk.css",
+    "main.js": "/ElectronicMusicSite/static/js/main.95358e44.chunk.js",
+    "main.js.map": "/ElectronicMusicSite/static/js/main.95358e44.chunk.js.map",
+    "runtime-main.js": "/ElectronicMusicSite/static/js/runtime-main.f4bd6baf.js",
+    "runtime-main.js.map": "/ElectronicMusicSite/static/js/runtime-main.f4bd6baf.js.map",
+    "static/js/2.eac763fd.chunk.js": "/ElectronicMusicSite/static/js/2.eac763fd.chunk.js",
+    "static/js/2.eac763fd.chunk.js.map": "/ElectronicMusicSite/static/js/2.eac763fd.chunk.js.map",
+    "index.html": "/ElectronicMusicSite/index.html",
+    "precache-manifest.ac2c2ae2a03583ac6def6d49f1500a96.js": "/ElectronicMusicSite/precache-manifest.ac2c2ae2a03583ac6def6d49f1500a96.js",
+    "service-worker.js": "/ElectronicMusicSite/service-worker.js",
+    "static/css/main.006c0d76.chunk.css.map": "/ElectronicMusicSite/static/css/main.006c0d76.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f4bd6baf.js",
+    "static/js/2.eac763fd.chunk.js",
+    "static/css/main.006c0d76.chunk.css",
+    "static/js/main.95358e44.chunk.js"
+  ]
 }
