@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/ElectronicMusicSite/static/css/main.006c0d76.chunk.css",
-    "main.js": "/ElectronicMusicSite/static/js/main.575d8813.chunk.js",
-    "main.js.map": "/ElectronicMusicSite/static/js/main.575d8813.chunk.js.map",
-    "runtime-main.js": "/ElectronicMusicSite/static/js/runtime-main.4a6e18ba.js",
-    "runtime-main.js.map": "/ElectronicMusicSite/static/js/runtime-main.4a6e18ba.js.map",
-    "static/js/2.d8702f20.chunk.js": "/ElectronicMusicSite/static/js/2.d8702f20.chunk.js",
-    "static/js/2.d8702f20.chunk.js.map": "/ElectronicMusicSite/static/js/2.d8702f20.chunk.js.map",
-    "index.html": "/ElectronicMusicSite/index.html",
-    "precache-manifest.d66e6fdc4300c4a0354730b6146bf21a.js": "/ElectronicMusicSite/precache-manifest.d66e6fdc4300c4a0354730b6146bf21a.js",
-    "service-worker.js": "/ElectronicMusicSite/service-worker.js",
-    "static/css/main.006c0d76.chunk.css.map": "/ElectronicMusicSite/static/css/main.006c0d76.chunk.css.map",
-    "static/js/2.d8702f20.chunk.js.LICENSE.txt": "/ElectronicMusicSite/static/js/2.d8702f20.chunk.js.LICENSE.txt"
+    "main.css": "/electronicmusic/static/css/main.006c0d76.chunk.css",
+    "main.js": "/electronicmusic/static/js/main.63424bd5.chunk.js",
+    "main.js.map": "/electronicmusic/static/js/main.63424bd5.chunk.js.map",
+    "runtime-main.js": "/electronicmusic/static/js/runtime-main.621201f1.js",
+    "runtime-main.js.map": "/electronicmusic/static/js/runtime-main.621201f1.js.map",
+    "static/js/2.d8702f20.chunk.js": "/electronicmusic/static/js/2.d8702f20.chunk.js",
+    "static/js/2.d8702f20.chunk.js.map": "/electronicmusic/static/js/2.d8702f20.chunk.js.map",
+    "index.html": "/electronicmusic/index.html",
+    "precache-manifest.5a1e660060108779421de4726bca8610.js": "/electronicmusic/precache-manifest.5a1e660060108779421de4726bca8610.js",
+    "service-worker.js": "/electronicmusic/service-worker.js",
+    "static/css/main.006c0d76.chunk.css.map": "/electronicmusic/static/css/main.006c0d76.chunk.css.map",
+    "static/js/2.d8702f20.chunk.js.LICENSE.txt": "/electronicmusic/static/js/2.d8702f20.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4a6e18ba.js",
+    "static/js/runtime-main.621201f1.js",
     "static/js/2.d8702f20.chunk.js",
     "static/css/main.006c0d76.chunk.css",
-    "static/js/main.575d8813.chunk.js"
+    "static/js/main.63424bd5.chunk.js"
   ]
 }
