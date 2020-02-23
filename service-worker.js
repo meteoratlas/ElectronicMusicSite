@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ElectronicMusicSite/precache-manifest.ac2c2ae2a03583ac6def6d49f1500a96.js"
+  "/ElectronicMusicSite/precache-manifest.d66e6fdc4300c4a0354730b6146bf21a.js"
 );
 
 self.addEventListener('message', (event) => {
