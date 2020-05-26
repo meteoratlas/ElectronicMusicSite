@@ -25,8 +25,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  /*background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAP0lEQVQoU42Q0QoAIAgDz///aMPAKKeQb26HTg0tB6zKVUhI4Bus5tMn2K4Djh7gBGXM7Uvo5riQ/BfUNwwTWfn+Cgg4zkoRAAAAAElFTkSuQmCC) repeat;*/
-  background: url("/img/bg4.png");
+  background: url("/ElectronicMusicSite/img/bg4.png");
   z-index: -5;
 }
 
@@ -75,7 +74,7 @@ a {
 
 .headline-bg {
   border: 50px solid saddlebrown;
-  border-image: url("/img/waveform.png") fill 30% 15%;
+  border-image: url("/ElectronicMusicSite/img/waveform.png") fill 30% 15%;
   max-width: 70%;
   margin: 0 auto;
   padding: 2em;  
@@ -96,6 +95,7 @@ a {
   margin: 0 auto;
   padding: 0;
   overflow: auto;
+  z-index: -1;
 }
 
 .recording-margin {
@@ -295,7 +295,7 @@ a {
   top: 0;
   margin: 12px;
   cursor: pointer;
-  background-image: url("/img/X.png");
+  background-image: url("/ElectronicMusicSite/img/X.png");
   background-size: cover;
 }
 
@@ -310,7 +310,7 @@ a {
   list-style-position: inside;
   width: 25%;
   border: 50px solid saddlebrown;
-  border-image: url("/img/waveform.png") fill 30% 15%;
+  border-image: url("/ElectronicMusicSite/img/waveform.png") fill 30% 15%;
 }
 
 .credits h2 {
@@ -440,6 +440,10 @@ a {
     border: none;
   }
 
+  .modal-titles {
+    padding-bottom: 0.2em;
+  }
+
   .modal-titles h1 {
     font-size: 2em;
   }
@@ -451,7 +455,7 @@ a {
   .rec-description {
     display: block;
     width: 100%;
-    font-size: 1em;
+    font-size: 0.95em;
   }
   .youtube-wrapper {
     display: block;
@@ -478,6 +482,10 @@ a {
 
   .header {
     max-width: 80%;
+  }
+
+  .headline-bg {
+    hyphens: auto;
   }
 
   .credits {

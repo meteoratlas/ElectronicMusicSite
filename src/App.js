@@ -8,7 +8,7 @@ import Credits from './Credits';
 class App extends Component {
   render() {
     return (
-    
+      <React.Fragment>
         <div className="App">
         <div className="app-overlay"></div>
           <PageHeader/>
@@ -16,7 +16,7 @@ class App extends Component {
           <Credits/>
           <PageBottom />
         </div>
-      
+      </React.Fragment>
     );
   }
 }

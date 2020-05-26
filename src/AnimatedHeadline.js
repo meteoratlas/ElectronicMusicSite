@@ -13,9 +13,8 @@ class AnimatedHeadline extends Component {
     componentDidMount() {
         // TODO: may need to activate the setinterval elsewhere (particularly if we want the headline to animate each time we bring up the modal description window.)
         this.timerID = setInterval(
-          () => this.animateNextChar(),
-          50
-        );
+            () => this.animateNextChar(), 50
+          );
       }
     
       componentWillUnmount() {

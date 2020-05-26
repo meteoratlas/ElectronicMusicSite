@@ -37,7 +37,7 @@ class RecordingContainer extends Component {
                     title={Data.recordings[i].title} 
                     year={Data.recordings[i].year}
                     // https://stackoverflow.com/questions/37644265/correct-path-for-img-on-react-js
-                    imgSrc={ '/img/' + Data.recordings[i].image}
+                    imgSrc={process.env.PUBLIC_URL + '/img/' + Data.recordings[i].image}
                     youtube={Data.recordings[i].youtube}
                     description={Data.recordings[i].description}
                     offset={i+1}
