@@ -1,12 +1,12 @@
 {
-    "recordings":[
+    "recordings": [
         {
             "year": 1969,
             "title": "Hymnen",
             "artist": "Karlheinz Stockhausen",
             "image": "1969.jpg",
-            "youtube": "https://www.youtube.com/embed/-7dGw6UYmnQ",
-            "description": "The electronic music scene established itself long before most would guess. One of its early works in the academic sphere is Hymnen, a reinterpretation of several national anthems. It is performed on a varied ensemble, ranging from conventional instrumentation such as pianos and violas to the Electronium, a primitive synthesizer. Hymnen also incorporated a prerecorded tape loop to play along to, roughly resembling an early kind of sampling. While many people have a notion of classical music as being old-fashioned and stuffy, Stockhausen's piece proves that many composers of the time were actually pushing the boundaries of music, and their experimentation would influence many musicians to come.",
+            "youtube": "https://www.youtube.com/watch?v=zDxpa-XPMTo",
+            "description": "The world of electronic music established itself long before most would guess. One of its early works in the academic sphere is Hymnen, a reinterpretation of several national anthems. It is performed on a varied ensemble, ranging from conventional instrumentation such as pianos and violas to the Electronium, a primitive synthesizer. Hymnen also incorporated a prerecorded tape loop to play along to, roughly resembling an early kind of sampling. While many people have a notion of classical music as being old-fashioned and stuffy, Stockhausen's piece proves that many composers of the time were actually pushing the boundaries of music, and their experimentation would influence many musicians to come.",
             "country": "ger"
         },
         {
@@ -33,7 +33,7 @@
             "artist": "Tangerine Dream",
             "image": "1972.jpg",
             "youtube": "https://www.youtube.com/embed/SG5UmB3qzFc",
-            "description": "Well known for their dreamy experimentation and soundtracks, Tangerine Dream are overwhelmingly prolific - with nearly 160 complete albums and a constantly evolving lineup that goes back to the mid-Sixties, it's easy to see why they have become a musical institution. Zeit is their third album, and one of their most divisive. Scored for synths and four cellos and meant to evoke space and time itself, with tonal drones and mysterious noises drifting between anxious and relaxed. Regardless of its reception, Zeit expanded the world of Tangerine Dream's music and serves as foreshadowing for the darker side of ambient music that would emerge decades later.",
+            "description": "Well known for their dreamy experimentation and soundtracks, Tangerine Dream are overwhelmingly prolific - with nearly 160 albums and a constantly evolving lineup that goes back to the mid-Sixties, it's easy to see why they have become a musical institution. Zeit is their third album, and one of their most divisive. Scored for synths and four cellos, it is meant to evoke space and time itself, with tonal drones and mysterious noises evoking both relaxation and anxiety. Regardless of its reception, Zeit expanded the world of Tangerine Dream's music and serves as foreshadowing for the darker side of ambient music that would emerge decades later.",
             "country": "ger"
         },
         {
@@ -42,7 +42,7 @@
             "artist": "Nik Pascal Raicevic",
             "image": "1973.jpg",
             "youtube": "https://www.youtube.com/embed/mfPAJFnBONY",
-            "description": "Classical composers would often compose studies to explore the ranges of their preferred instrument. As synthesizers slowly became viewed as instruments in their own right, recordings of technologists and musicians doing the same for their electronic instruments followed. Magnetic Web is just one of these: Nik Pascal puts his Moog through its paces, not just through instrument proficiency, but in the range of sounds he can coax out of his lone synth. The result is half quivering synths, half deep space soundscape, littered with tinges of psychedelia popular at the time.",
+            "description": "Classical composers would often compose studies to explore the ranges and capabilities of their preferred instrument. As synthesizers slowly became viewed as instruments in their own right, recordings of technologists and musicians doing the same for their electronic tools followed. Magnetic Web is just one of these: Nik Pascal puts his Moog through its paces, not just through instrumental proficiency, but in the range of sounds he can coax out of his lone machine. The result is half quivering synth, half deep space soundscape, littered with tinges of psychedelia popular at the time.",
             "country": "usa"
         },
         {
@@ -51,7 +51,7 @@
             "artist": "Kraftwerk",
             "image": "1974.jpg",
             "youtube": "https://www.youtube.com/embed/x-G28iyPtz0",
-            "description": "After several albums of Krautrock with tentative stretches into studio-based electronic manipulation, Kraftwerk released Autobahn - a pulsing, synthesizer-driven tribute to the road of the same name. Featuring the vocoder-filtered vocals, catchy melodies and plucky bass parts, the classic Kraftwerk touches are all present here. The sampled sound effects and synthesized sounds of cars rushing past just add to the fast-paced atmosphere. Rich with musical and technological ideas, it inspired many young composers and might make a great soundtrack for your next road trip.",
+            "description": "After several albums of Krautrock with tentative forays into studio-based electronic manipulation, Kraftwerk released Autobahn - a pulsing, synthesizer-driven tribute to the road of the same name. Featuring the vocoder-filtered vocals, catchy melodies and plucky bass parts, the classic Kraftwerk touches are all present here. The sampled sound effects and synthesized sounds of cars rushing past just add to the fast-paced atmosphere. Rich with musical and technological ideas, it inspired many young composers and might make a great soundtrack for your next road trip.",
             "country": "ger"
         },
         {
@@ -69,7 +69,7 @@
             "artist": "Jean-Michel Jarre",
             "image": "1976.jpg",
             "youtube": "https://www.youtube.com/embed/5DDEl7JnWvo",
-            "description": "Oxygène is the album that propelled Jean-Michel Jarre out of the shadow of his father, famed Hollywood composer Maurice Jarre. Assembled in his room between odd jobs, the album became an unexpected hit due to radio play of its single Oxygène IV. The most impressive part of the album is its life. At nearly every point, one can hear sine waves bubbling, and wide pads soaring and evolving like the string section in an orchestra. It was not just a rebuke to the stereotype of the robot electronic band popularized by Kraftwerk, it was a testament to the amount of expression Jarre could coax out of his machines.",
+            "description": "Oxygène is the album that propelled Jean-Michel Jarre out of the shadow of his father, famed Hollywood composer Maurice Jarre. Assembled in his room between odd jobs, the album became an unexpected hit due to radio play of its single 'Oxygène IV'. The most impressive part of the album is its sense of life. At nearly every point, one can hear sine waves bubbling, and wide pads soaring and evolving like the string section in an orchestra. It was not just a rebuke to the stereotype of the robotic electronics popularized by Kraftwerk, it was a testament to the amount of expression Jarre could coax out of his machines.",
             "country": "fra"
         },
         {
@@ -87,7 +87,7 @@
             "artist": "Brian Eno",
             "image": "1978.jpg",
             "youtube": "https://www.youtube.com/embed/vNwYtllyt3Q",
-            "description": "Whether Brian Eno invented ambient music is a debated question; but his contributions are irrefutable. Inspired by straining to hear quiet music while bedridden in a hospital, Eno created an album that exists to be simultaneously be enjoyed and ignored. Originally intended as an art installation at an actual airport, its sparse textures were created by running piano recordings through tape loops. Eno would go on to record three additional albums in the Ambient series with several collaborators, and continues to produce music to this day.",
+            "description": "Whether Brian Eno invented ambient music is a widely debated question; but his contributions to the genre are irrefutable. Inspired by straining to hear quiet music while bedridden in a hospital, Eno created an album that exists to simultaneously be enjoyed and ignored. Originally intended as an art installation at an actual airport, its sparse textures were created by running piano recordings through tape loops. Eno would go on to record three additional albums in the Ambient series with several collaborators, and continues to produce music to this day.",
             "country": "uk"
         },
         {
@@ -105,7 +105,7 @@
             "artist": "Kitarō",
             "image": "1980.jpg",
             "youtube": "https://www.youtube.com/embed/ONjMiLMw66g",
-            "description": "Kitarō is one of the most prominent figures in New Age music (a term he would resent), combining slow ambient synth lines with exotic instrumentation. His score to the NHK documentary series The Silk Road brought him international renown in the eighties, but it was his folksy and comforting blend of the traditional and the new that gave his music a life beyond television. Even his weaker excursions on Silk Road contain an ethereal melancholy that transcend its forays into kitsch.",
+            "description": "Kitarō is one of the most prominent figures in New Age music (a term he would come to resent), combining slow ambient synth lines with traditional Japanese instrumentation. His score to the NHK documentary series The Silk Road brought him international renown in the eighties, but it was his folksy and comforting blend of the traditional and the new that gave his music a life beyond television. Even his weaker excursions on Silk Road contain an ethereal melancholy that transcend its forays into kitsch.",
             "country": "jpn"
         },
         {
@@ -114,7 +114,7 @@
             "artist": "The Human League",
             "image": "1981.jpg",
             "youtube": "https://www.youtube.com/embed/nHtTJ7aBjTc",
-            "description": "After two mildly successful albums, The Human League rebranded itself as a song-based group, an attempt to distance themselves from the sonic experimentation based music being produced elsewhere in the electronic music scene (and in the band's previous albums). This distinction proved paramount - Dare and its singles were a massive success, commercially and critically. It would also define what pop music would sound like for the rest of the 80's, and what retro lovers in the future would seek to emulate.",
+            "description": "After two mildly successful albums, The Human League rebranded itself as a song-based group, an attempt to distance themselves from the artsy sonic experimentation of the band's previous albums. This distinction proved paramount - Dare and its singles were a massive success, commercially and critically. It would also define what pop music would sound like for the rest of the 80's, and what retro lovering bands in the future would seek to musically emulate.",
             "country": "uk"
         },
         {
@@ -150,7 +150,7 @@
             "artist": "Koji Kondo",
             "image": "1985.jpg",
             "youtube": "https://www.youtube.com/embed/wGX4obVl64w",
-            "description": "In the early days of video games, sound and music were a secondary concern. Composer Koji Kondo contributed a jaunty score to the game: the famous syncopated main theme mirroring the leaps and bounds of the player, the waltz of the water levels the gentle bobbing of deep sea traversal. All this done on a sound chip that could only play three notes at the same time. The sounds of Mario became the soundtrack to a generation, and has an impressive amount of sample credits from artists such as Meek Mill and Charli XCX.",
+            "description": "In the early days of video games, sound and music were a secondary concern. Composer Koji Kondo contributed a jaunty score to the game: the famous syncopated main theme mirrors the leaps and bounds of the player, the waltz of the water levels the gentle bobbing of deep sea swimming. All this done on a sound chip that could only play three notes at the same time. The sounds of Mario became the soundtrack to a generation, and led to an impressive amount of sample credits from artists such as Meek Mill and Charli XCX.",
             "country": "jpn"
         },
         {
@@ -231,7 +231,7 @@
             "artist": "Autechre",
             "image": "1994.jpg",
             "youtube": "https://www.youtube.com/embed/EZFmZ0gZNZI",
-            "description": "Autechre are infamous for their mechanical abstraction albums, pushing even the heady reputation of the Warp Records label they appear on. The Anti EP is their first and only foray into political action, meant to benefit a civil liberties group. In 1994, the U.K. passed the Criminal Justice and Public Order Act, a controversial bill designed to crack down on raves and similar events by declaring music with 'repetitive beats' as a public nuisance. The spry dance tune 'Flutter' on this EP deftly dodges this rule, as not a single beat in it is repeated once.",
+            "description": "Autechre are infamous for their mechanical and abstract albums, pushing even the heady reputation of the Warp Records label they appear on. The Anti EP is their first and only foray into political action, meant to benefit a civil liberties group. In 1994, the U.K. passed the Criminal Justice and Public Order Act, a controversial bill designed to crack down on raves and similar events by declaring music with 'repetitive beats' as a public nuisance. The spry dance tune 'Flutter' on this EP was written specifically to dodge this rule; not a single beat in it is repeated once.",
             "country": "uk"
         },
         {
@@ -276,7 +276,7 @@
             "artist": "Moby",
             "image": "1999.jpg",
             "youtube": "https://www.youtube.com/embed/IJWlBfo5Oj0",
-            "description": "Originally intended to be Moby's final album after a disastrous excursion into punk rock, Moby's Play became a massive hit due to its canny marketing strategy - licensing. Every track on the album was licensed for TV, film, and advertisements, making it omnipresent prior to the turn of the century. This approach would quickly become standard for music across the industry. The music is no slouch either: the combination of energetic beats and gospel choir makes the album easy to love, and Moby would enjoy similar success with his follow up album 18.",
+            "description": "Originally intended to be Moby's final album after a disastrous excursion into punk rock, Moby's Play became a massive hit due to its canny marketing strategy - licensing. Every track on the album was licensed for TV, film, and advertisements, making it omnipresent prior to the turn of the century. This approach would quickly become standard for music across the industry. Not that the doesn't pull its weight: the combination of energetic beats and gospel choir makes the album easy to love, and Moby would take a similar approach with his follow-up album 18.",
             "country": "usa"
         },
         {
@@ -294,7 +294,7 @@
             "artist": "Daft Punk",
             "image": "2001.jpg",
             "youtube": "https://www.youtube.com/embed/4whD6uAryMs",
-            "description": "Daft Punk shot into the pop stratosphere with their omnipresent hit 'Get Lucky', but the band occupied a smaller chunk of the mainstream in the early 2000's with their breakout album Discovery. Their style was always distinctive: catchy electronic pop, heavily influenced by french house music and featuring heavily vocoded vocals and the over-the-top sidechaining to let the bass through. While many tracks on Discovery remain popular, the single 'Digital Love' may be the most distinctive, especially when paired with its Japanese animation inspired music video.",
+            "description": "Daft Punk shot into the pop stratosphere with their omnipresent hit 'Get Lucky', but the band occupied a smaller chunk of the mainstream in the early 2000's with their breakout album Discovery. Their style was always distinctive: catchy electronic pop, heavily influenced by french house music and featuring heavily vocoded vocals and the over-the-top sidechaining to keep the drums pumping. While many tracks on Discovery remain popular, the single 'Digital Love' may be the most distinctive, especially when paired with its Japanese animation inspired music video.",
             "country": "fra"
         },
         {
@@ -303,7 +303,7 @@
             "artist": "LCD Soundsystem",
             "image": "2002.jpg",
             "youtube": "https://www.youtube.com/embed/VXQnnqO4K3c",
-            "description": "After a career of DJing, James Murphy decided to throw together a tribute to his favourite bands growing up - Modern Lovers, Can, and more - and record the sprawling single Losing My Edge, in which Murphy half-sings over a synth beat about his feelings of irrelevancy, hipster hypocrisy, and drops more than two dozen names. It was surprisingly popular, and the success of the LP follow up a couple years later cemented James Murphy's band in musical history beside the bands he grew up idolizing.",
+            "description": "After a career of DJing, James Murphy decided to throw together a tribute to his favourite bands growing up - Modern Lovers, Can, and more - and record the sprawling single Losing My Edge, in which Murphy half-sings over a synth beat about his feelings of irrelevancy, hipster hypocrisy, and drops more than two dozen band names. It was surprisingly popular, and the success of the LP follow up a couple years later cemented James Murphy's band in musical history beside the bands he grew up idolizing.",
             "country": "usa"
         },
         {
@@ -312,7 +312,7 @@
             "artist": "Four Tet",
             "image": "2003.jpg",
             "youtube": "https://www.youtube.com/embed/SaesIA6_m-U",
-            "description": "Similar to his predecessors, Four Tet assembled his early work (including Rounds) entirely out of samples from other songs. But the result is almost unnoticeable here - to the point where no fan or critic in the music press realized it until it was revealed in an interview. Unlike earlier mash up albums where identifying samples was part of the fun, Four Tet seamlessly stitched chunks of song together to create a work entirely in his voice, signifying the maturity that sampling had reached as an art form so soon after its introduction.",
+            "description": "Similar to his predecessors, Four Tet assembled his early work (including Rounds) entirely out of samples from other songs. But the result is almost unnoticeable here - to the point where no fan or critic in the music press realized until it was revealed in an interview. Unlike earlier mash up albums where identifying samples was part of the fun, Four Tet seamlessly stitched chunks of song together to create a work entirely in his voice, signifying the maturity that sampling had reached as an art form so soon after its introduction.",
             "country": "uk"
         },
         {
@@ -330,7 +330,7 @@
             "artist": "Caribou",
             "image": "2005.jpg",
             "youtube": "https://www.youtube.com/embed/RlXj0Y4gV3I",
-            "description": "Dan Snaith, who records under the name Caribou and many others, has made a career out of bouncing between sub-genres of electronic music. The Milk of Human Kindness was his first big release. Critics and listeners took notice of the combination of electronics, sampling, and acoustic guitar, dubbing it folktronica. Snaith's follow up, Andorra, would go on to win the prestigious Polaris Prize, and his future albums would take his sound towards the dance floor. Genre hopping aside, the folktronica movement headed by Caribou would influence countless electronic musicians.",
+            "description": "Dan Snaith, who records under the name Caribou and many others, has made a career out of bouncing between sub-genres of electronic music. The Milk of Human Kindness was his first big release. Critics and listeners took notice of the combination of electronics, sampling, and acoustic guitar, and dubbed it folktronica. Snaith's follow up, Andorra, would go on to win the prestigious Polaris Prize, and his future albums would take his sound towards the dance floor. Genre hopping aside, the folktronica movement headed by Caribou would inspire countless electronic musicians.",
             "country": "can"
         },
         {
@@ -402,7 +402,7 @@
             "artist": "Oneohtrix Point Never",
             "image": "2013.jpg",
             "youtube": "https://www.youtube.com/embed/M1QAM9rq1PA",
-            "description": "Daniel Lopatin has dabbled in countless music styles, but his work as Oneohtrix Point Never is perhaps his best known project. Stranded somewhere between experimental and ambient music, R Plus Seven is partly an exploration of synthesizer and sampler presets - usually maligned, but are warped and incorporated here to introduce semi-alien texture to his work. For enthusiasts, listening to the album can become a game of noticing tell-tale sounds from various eras of electronic music history, but it's far more likely that Lopatin's eerie compositions will draw you into his world before you notice.",
+            "description": "Daniel Lopatin has dabbled in countless music styles, but his work as Oneohtrix Point Never is perhaps his best known project. Stranded somewhere between experimental and ambient music, R Plus Seven is partly an exploration of synthesizer and sampler presets - usually maligned, but are warped and incorporated here to introduce uncanny texture to his work. For enthusiasts, listening to the album can become a game of noticing tell-tale sounds from various eras of electronic music history, but it's far more likely that Lopatin's eerie compositions will draw you into his world before you notice.",
             "country": "usa"
         },
         {
@@ -411,7 +411,7 @@
             "artist": "Flying Lotus",
             "image": "2014.jpg",
             "youtube": "https://www.youtube.com/embed/sul_sk397dw",
-            "description": "On You're Dead!, Flying Lotus serves as your musical psychopomp, taking you on a musical journey through the afterlife. This concept album continues the L.A. beatmaker's characteristic bass, lo-fi haziness, and wobbly beats, while adding jazz to his musical palette. He also brings in a number of vocalists (including his own, credited as Captain Murphy) and invites them into a distinctive world of sound which has many imitators, but none that have surpassed Lotus's distinctive style.",
+            "description": "On You're Dead!, Flying Lotus serves as your musical psychopomp, taking you on a musical journey through the afterlife. This concept album continues the L.A. beatmaker's characteristic bass, lo-fi haziness, and wobbly beats, while adding jazz to his musical palette. He also brings in a number of vocalists (including himself, credited as Captain Murphy) and invites them into a distinctive world of sound. He has many imitators, but none have surpassed Lotus's distinctive style.",
             "country": "usa"
         },
         {
@@ -438,7 +438,7 @@
             "artist": "A L E X",
             "image": "2017.jpg",
             "youtube": "https://www.youtube.com/embed/Ne1t4mv3grI",
-            "description": "A L E X is one of a new wave of producers pseudonymously publishing their music on platforms such as SoundCloud and Bandcamp. He recontextualizes the ephemera of childhood - sound and music from old TV shows and video games - and places slow beats and VHS tape haze over them, creating a mournful holograph to the collective childhood of modern young adults. With music software easily available and copyright a secondary concern, producers such as A L E X can borrow from deeply personal sources to an extent that makes his music approach the realm of memory landscape.",
+            "description": "A L E X is one of a new wave of producers pseudonymously publishing their music on platforms such as SoundCloud and Bandcamp. He recontextualizes the ephemera of childhood - sound and music from old TV shows and video games - and places slow beats and VHS tape haze over them, creating a mournful holograph to the collective childhood of modern young adults. With music software easily available and copyright a minor concern, producers such as A L E X can borrow from deeply personal sources to create music that approaches the realm of memory landscape.",
             "country": "south korea"
         },
         {
