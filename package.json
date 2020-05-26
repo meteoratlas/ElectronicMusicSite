@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.5.0",
     "gh-pages": "^2.0.1",
     "particlesjs": "^2.2.3",
     "react": "^16.6.0",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.6.0",
     "react-flip-toolkit": "^6.0.0",
     "react-lodash": "^0.1.2",
