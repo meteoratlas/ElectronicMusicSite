@@ -5,13 +5,13 @@ class PageHeader extends Component {
         super(props);
         this.state = {};
         this.imgBg = {
-            borderImage: `url('${process.env.PUBLIC_URL}/img/waveform.png') fill 30% 15%`
+            borderImage: `url('${process.env.PUBLIC_URL}/img/waveform.png') fill 30% 15%`,
         };
     }
     render() {
         return (
             <div className="header">
-                <div className="headline-bg">
+                <div className="headline-bg" style={this.imgBg}>
                     <h1>50 Years of Elect&shy;ronic Music</h1>
                 </div>
                 <p>

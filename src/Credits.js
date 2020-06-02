@@ -5,7 +5,7 @@ class Credits extends Component {
         super(props);
         this.state = {};
         this.imgBg = {
-            borderImage: `url('${process.env.PUBLIC_URL}/img/waveform.png') fill 30% 15%`
+            borderImage: `url('${process.env.PUBLIC_URL}/img/waveform.png') fill 30% 15%`,
         };
     }
     render() {
@@ -15,18 +15,9 @@ class Credits extends Component {
                 <p>Designed, coded, and written by Kelly Horan</p>
                 <p>Made with React, HTML5, JavaScript, and CSS</p>
                 <p>
-                    Image Credits: RateYourMusic, MusicBrainz, Discogs,
+                    Images sourced from: RateYourMusic, MusicBrainz, Discogs,
                     Wikipedia, and The Vinyl Factory.
                 </p>
-                {/*
-                <ul>
-                    <li>RateYourMusic</li>
-                    <li>MusicBrainz</li>
-                    <li>Discogs</li>
-                    <li>Wikipedia</li>
-                    <li>The Vinyl Factory (https://thevinylfactory.com/features/electric-futurism-francis-bebey/)</li>
-                </ul>
-                */}
             </div>
         );
     }
