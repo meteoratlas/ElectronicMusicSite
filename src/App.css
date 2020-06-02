@@ -238,7 +238,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
-    animation-duration: 0.4s;
+    animation-duration: 0s;
     animation-name: transformIn;
     border: 5px #eee solid;
     /*max-height: 80%;*/
@@ -369,6 +369,12 @@ h6 {
 /*
     Animation
 */
+
+canvas {
+    position: fixed;
+    width: auto;
+    height: auto;
+}
 
 @keyframes transformIn {
     from {

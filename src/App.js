@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Particles from "react-particles-js";
 import "./App.css";
 import PageHeader from "./PageHeader";
 import RecordingContainer from "./RecordingContainer";
@@ -10,6 +11,26 @@ class App extends Component {
         return (
             <React.Fragment>
                 <div className="App">
+                    <Particles
+                        params={{
+                            particles: {
+                                number: {
+                                    value: 50,
+                                },
+                                size: {
+                                    value: 3,
+                                },
+                            },
+                            interactivity: {
+                                events: {
+                                    onhover: {
+                                        enable: true,
+                                        mode: "repulse",
+                                    },
+                                },
+                            },
+                        }}
+                    />
                     <div className="app-overlay" />
                     <PageHeader />
                     <RecordingContainer />
