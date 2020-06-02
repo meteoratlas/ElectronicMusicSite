@@ -6,7 +6,9 @@ const RecordingModal = (props) => {
     const divStyle = {
         background:
             " linear-gradient(to left, rgba(0,0,0,0.33) 0%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 100%), url(" +
-            props.imgSrc +
+            process.env.PUBLIC_URL +
+            "/img/" +
+            props.image +
             ")",
         backgroundSize: "100%",
     };
