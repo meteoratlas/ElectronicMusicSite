@@ -359,6 +359,7 @@ h6 {
     min-width: 100%;
     cursor: pointer;
     text-align: center;
+    z-index: -99;
 }
 
 .page-bottom h3 {
@@ -374,6 +375,7 @@ canvas {
     position: fixed;
     width: auto;
     height: auto;
+    pointer-events: none;
 }
 
 @keyframes transformIn {

@@ -21,14 +21,6 @@ class App extends Component {
                                     value: 3,
                                 },
                             },
-                            interactivity: {
-                                events: {
-                                    onhover: {
-                                        enable: true,
-                                        mode: "repulse",
-                                    },
-                                },
-                            },
                         }}
                     />
                     <div className="app-overlay" />
