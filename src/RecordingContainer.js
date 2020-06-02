@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Container } from "react-bootstrap";
 
 import Recording from "./Recording";
 import Data from "./data.json";
@@ -29,25 +30,22 @@ class RecordingContainer extends Component {
         this.setState({
             recordings: this.initRecordings,
         });
-        this.elements = document.getElementsByClassName("rec-grid")[0];
+        this.elements = document.querySelector(".container-fluid");
     }
 
     populateRecordings() {
         for (let i = 0; i < Data.recordings.length; i++) {
+            const rec = Data.recordings[i];
             this.initRecordings.push(
                 <Recording
-                    key={Data.recordings[i].year}
-                    artist={Data.recordings[i].artist}
-                    title={Data.recordings[i].title}
-                    year={Data.recordings[i].year}
+                    key={rec.year}
+                    artist={rec.artist}
+                    title={rec.title}
+                    year={rec.year}
                     // https://stackoverflow.com/questions/37644265/correct-path-for-img-on-react-js
-                    imgSrc={
-                        process.env.PUBLIC_URL +
-                        "/img/" +
-                        Data.recordings[i].image
-                    }
-                    youtube={Data.recordings[i].youtube}
-                    description={Data.recordings[i].description}
+                    imgSrc={process.env.PUBLIC_URL + "/img/" + rec.image}
+                    youtube={rec.youtube}
+                    description={rec.description}
                     offset={i + 1}
                 />
             );
@@ -137,7 +135,7 @@ class RecordingContainer extends Component {
                     titleAlph={this.handleAlphabeticalTitleButton.bind(this)}
                     artistAlph={this.handleAlphabeticalArtistButton.bind(this)}
                 />
-                <div className="rec-grid">{this.state.recordings}</div>
+                <Container fluid>{this.state.recordings}</Container>
             </div>
         );
     }
