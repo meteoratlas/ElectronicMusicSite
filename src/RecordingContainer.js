@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 import Recording from "./Recording";
 import Data from "./data.json";
 import SortMenu from "./SortMenu";
+import RecordingModal from "./Modal";
 
 class RecordingContainer extends Component {
     constructor(props) {
@@ -129,6 +130,7 @@ class RecordingContainer extends Component {
     render() {
         return (
             <div className="recordingContainer">
+                <RecordingModal {...Data.recordings[1]} />
                 <SortMenu
                     dateAsc={this.handleDateAscendingButton.bind(this)}
                     dateDes={this.handleDateDescendingButton.bind(this)}
