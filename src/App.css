@@ -139,7 +139,10 @@ a {
 }
 
 .recording {
-    background: linear-gradient(130deg, #575677, #091224);
+    /* background: linear-gradient(130deg, #575677, #091224); */
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: "Major Mono Display", monospace;
+    font-weight: 700;
     min-height: 370px;
     max-height: 500px;
     cursor: pointer;

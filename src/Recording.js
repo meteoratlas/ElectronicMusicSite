@@ -1,9 +1,4 @@
 import React, { PureComponent } from "react";
-import ReactDOM from "react-dom";
-import CloseModalButton from "./CloseModalButton";
-import AnimatedHeadline from "./AnimatedHeadline";
-
-const modalRoot = document.getElementById("modal-root");
 
 class Recording extends PureComponent {
     constructor(props) {
@@ -82,8 +77,12 @@ class Recording extends PureComponent {
                 <div className="recording" onClick={this.props.clicked}>
                     <img src={this.props.imgSrc} alt={this.props.title} />
                     <div className="recTileText">
-                        <p className="recTileArtist">{this.props.artist}</p>
-                        <p className="recTileTitle">{this.props.title}</p>
+                        <p className="recTileArtist">
+                            {this.props.artist.toLowerCase()}
+                        </p>
+                        <p className="recTileTitle">
+                            {this.props.title.toLowerCase()}
+                        </p>
                         <p className="recTileYear">{this.props.year}</p>
                     </div>
                 </div>
