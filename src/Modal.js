@@ -13,7 +13,7 @@ const RecordingModal = (props) => {
         backgroundSize: "100%",
     };
     return (
-        <Modal centered show={true} dialogClassName="modal-90w">
+        <Modal centered show={props.show} dialogClassName="modal-90w">
             <Modal.Header closeButton></Modal.Header>
             <div className="modal-popup" style={divStyle}>
                 <div className="modal-titles">

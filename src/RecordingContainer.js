@@ -9,7 +9,12 @@ import RecordingModal from "./Modal";
 class RecordingContainer extends Component {
     constructor(props) {
         super(props);
-        this.state = { recordings: [], currentSort: 0 };
+        this.state = {
+            recordings: [],
+            currentSort: 0,
+            showModal: false,
+            selectedRecording: Data.recordings[0],
+        };
         this.sortingOptions = {
             DATE_ASCENDING: 0,
             DATE_DESCENDING: 1,
@@ -48,6 +53,7 @@ class RecordingContainer extends Component {
                     youtube={rec.youtube}
                     description={rec.description}
                     offset={i + 1}
+                    clicked={() => this.onRecordingClicked(i)}
                 />
             );
         }
@@ -127,10 +133,21 @@ class RecordingContainer extends Component {
         return 0;
     }
 
+    onRecordingClicked = (rec) => {
+        this.setState({
+            selectedRecording: Data.recordings[rec],
+            showModal: true,
+        });
+    };
+
     render() {
         return (
             <div className="recordingContainer">
-                <RecordingModal {...Data.recordings[1]} />
+                <RecordingModal
+                    {...this.state.selectedRecording}
+                    show={this.state.showModal}
+                />
+
                 <SortMenu
                     dateAsc={this.handleDateAscendingButton.bind(this)}
                     dateDes={this.handleDateDescendingButton.bind(this)}
