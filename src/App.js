@@ -8,6 +8,13 @@ import Credits from "./Credits";
 
 class App extends Component {
     render() {
+        const width =
+            window.innerWidth ||
+            document.documentElement.clientWidth ||
+            document.body.clientWidth;
+        // use less particles on devices with smaller screens
+        const numOfParticles = width > 800 ? 150 : 25;
+
         return (
             <React.Fragment>
                 <div className="App">
@@ -15,7 +22,7 @@ class App extends Component {
                         params={{
                             particles: {
                                 number: {
-                                    value: 50,
+                                    value: numOfParticles,
                                 },
                                 size: {
                                     value: 3,

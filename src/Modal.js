@@ -14,6 +14,7 @@ const RecordingModal = (props) => {
     };
     return (
         <Modal centered show={true} dialogClassName="modal-90w">
+            <Modal.Header closeButton></Modal.Header>
             <div className="modal-popup" style={divStyle}>
                 <div className="modal-titles">
                     <AnimatedHeadline
