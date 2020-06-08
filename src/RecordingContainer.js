@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Container } from "react-bootstrap";
+import _ from "lodash";
+import { Container, CardGroup, Row } from "react-bootstrap";
 
 import Recording from "./Recording";
 import Data from "./data.json";
@@ -141,6 +142,7 @@ class RecordingContainer extends Component {
     };
 
     render() {
+        const cards = _.chunk(this.initRecordings, 5);
         return (
             <div className="recordingContainer">
                 <RecordingModal
@@ -154,7 +156,11 @@ class RecordingContainer extends Component {
                     titleAlph={this.handleAlphabeticalTitleButton.bind(this)}
                     artistAlph={this.handleAlphabeticalArtistButton.bind(this)}
                 />
-                <Container fluid>{this.state.recordings}</Container>
+                <CardGroup fluid>
+                    {cards.map((rec, i) => {
+                        return <Row>{rec}</Row>;
+                    })}
+                </CardGroup>
             </div>
         );
     }

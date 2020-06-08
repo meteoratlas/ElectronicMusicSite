@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+import { Card } from "react-bootstrap";
 
 class Recording extends PureComponent {
     constructor(props) {
@@ -61,32 +62,46 @@ class Recording extends PureComponent {
     };
 
     componentDidMount() {
-        const animated = document.querySelector(".recording-margin");
-        animated.addEventListener("animationcancel", () => {
-            console.log("Animation cancel");
-        });
+        // const animated = document.querySelector(".recording-margin");
+        // animated.addEventListener("animationcancel", () => {
+        //     console.log("Animation cancel");
+        // });
     }
 
     render() {
         return (
-            <div
-                className={
-                    /*this.CSSOffset*/ this.state.className
-                } /*"recording-margin "*/
+            <Card
+                bg={"dark"}
+                style={{
+                    width: "20%",
+                    fontFamily: "Major Mono Display",
+                }}
             >
-                <div className="recording" onClick={this.props.clicked}>
-                    <img src={this.props.imgSrc} alt={this.props.title} />
-                    <div className="recTileText">
-                        <p className="recTileArtist">
-                            {this.props.artist.toLowerCase()}
-                        </p>
-                        <p className="recTileTitle">
-                            {this.props.title.toLowerCase()}
-                        </p>
-                        <p className="recTileYear">{this.props.year}</p>
-                    </div>
-                </div>
-            </div>
+                <Card.Img variant="top" src={this.props.imgSrc} />
+                <Card.Body>
+                    <Card.Title>{this.props.artist}</Card.Title>
+                    <Card.Text>{this.props.title}</Card.Text>
+                    {/* <Button variant="primary">Go somewhere</Button> */}
+                </Card.Body>
+            </Card>
+            // <div
+            //     className={
+            //         /*this.CSSOffset*/ this.state.className
+            //     } /*"recording-margin "*/
+            // >
+            //     <div className="recording" onClick={this.props.clicked}>
+            //         <img src={this.props.imgSrc} alt={this.props.title} />
+            //         <div className="recTileText">
+            //             <p className="recTileArtist">
+            //                 {this.props.artist.toLowerCase()}
+            //             </p>
+            //             <p className="recTileTitle">
+            //                 {this.props.title.toLowerCase()}
+            //             </p>
+            //             <p className="recTileYear">{this.props.year}</p>
+            //         </div>
+            //     </div>
+            // </div>
         );
     }
 }
