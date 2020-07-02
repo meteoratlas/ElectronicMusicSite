@@ -156,7 +156,7 @@ class RecordingContainer extends Component {
                     titleAlph={this.handleAlphabeticalTitleButton.bind(this)}
                     artistAlph={this.handleAlphabeticalArtistButton.bind(this)}
                 />
-                <CardGroup fluid>
+                <CardGroup>
                     {cards.map((rec, i) => {
                         return <Row>{rec}</Row>;
                     })}

@@ -55,7 +55,6 @@ class Recording extends PureComponent {
     };
 
     closeModal = () => {
-        console.log("close modal");
         this.setState((prevState) => ({
             active: false,
         }));
@@ -71,11 +70,14 @@ class Recording extends PureComponent {
     render() {
         return (
             <Card
+                className="mt-10"
                 bg={"dark"}
-                style={{
-                    width: "20%",
-                    fontFamily: "Major Mono Display",
-                }}
+                // style={{
+                //     width: "calc(20% - 8px)",
+                //     boxSizing: "border-box",
+                //     fontFamily: "Major Mono Display",
+                //     marginRight: "8px",
+                // }}
             >
                 <Card.Img variant="top" src={this.props.imgSrc} />
                 <Card.Body>

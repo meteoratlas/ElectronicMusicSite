@@ -104,13 +104,25 @@ a {
     Page Layout
 */
 
-.recordingContainer {
-    max-width: 70%;
-    height: 100%;
+.card-group {
+    width: 70%;
     margin: 0 auto;
-    padding: 0;
-    overflow: auto;
-    z-index: -1;
+}
+
+.row {
+    margin-bottom: 8px;
+}
+
+.card {
+    width: calc(20% - 8px);
+    box-sizing: border-box;
+    font-family: "Major Mono Display";
+    margin-right: 8px;
+}
+
+.card:last-child {
+    width: 20%;
+    margin-right: 0;
 }
 
 .container-fluid {
@@ -178,6 +190,11 @@ a {
 /*
     Menus
 */
+
+.sort-menu {
+    width: calc(70% + 30px);
+    margin: 0 auto;
+}
 
 .sort-menu h1 {
     font-size: 1.5em;
