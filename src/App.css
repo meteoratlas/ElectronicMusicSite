@@ -118,6 +118,7 @@ a {
     box-sizing: border-box;
     font-family: "Major Mono Display";
     margin-right: 8px;
+    cursor: pointer;
 }
 
 .card:last-child {

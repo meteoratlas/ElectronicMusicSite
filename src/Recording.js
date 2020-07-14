@@ -69,16 +69,7 @@ class Recording extends PureComponent {
 
     render() {
         return (
-            <Card
-                className="mt-10"
-                bg={"dark"}
-                // style={{
-                //     width: "calc(20% - 8px)",
-                //     boxSizing: "border-box",
-                //     fontFamily: "Major Mono Display",
-                //     marginRight: "8px",
-                // }}
-            >
+            <Card className="mt-10" bg={"dark"} onClick={this.props.clicked}>
                 <Card.Img variant="top" src={this.props.imgSrc} />
                 <Card.Body>
                     <Card.Title>{this.props.artist}</Card.Title>
@@ -86,24 +77,6 @@ class Recording extends PureComponent {
                     {/* <Button variant="primary">Go somewhere</Button> */}
                 </Card.Body>
             </Card>
-            // <div
-            //     className={
-            //         /*this.CSSOffset*/ this.state.className
-            //     } /*"recording-margin "*/
-            // >
-            //     <div className="recording" onClick={this.props.clicked}>
-            //         <img src={this.props.imgSrc} alt={this.props.title} />
-            //         <div className="recTileText">
-            //             <p className="recTileArtist">
-            //                 {this.props.artist.toLowerCase()}
-            //             </p>
-            //             <p className="recTileTitle">
-            //                 {this.props.title.toLowerCase()}
-            //             </p>
-            //             <p className="recTileYear">{this.props.year}</p>
-            //         </div>
-            //     </div>
-            // </div>
         );
     }
 }
