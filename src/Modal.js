@@ -13,7 +13,12 @@ const RecordingModal = (props) => {
         backgroundSize: "100%",
     };
     return (
-        <Modal centered show={props.show} dialogClassName="modal-90w">
+        <Modal
+            centered
+            show={props.show}
+            onHide={props.close}
+            dialogClassName="modal-90w"
+        >
             <Modal.Header closeButton></Modal.Header>
             <div className="modal-popup" style={divStyle}>
                 <div className="modal-titles">
@@ -41,7 +46,6 @@ const RecordingModal = (props) => {
                             allowFullScreen
                         ></iframe>
                     </div>
-                    {/*  <CloseModalButton onClick={handleClick} /> */}
                 </div>
             </div>
         </Modal>

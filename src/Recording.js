@@ -16,49 +16,8 @@ class Recording extends PureComponent {
                 ")",
             backgroundSize: "100%",
         };
-        this.handleClick = this.handleClick.bind(this);
-
         //this.CSSOffset = "recording-margin data-offset=" + this.props.offset;
     }
-
-    handleClick(e) {
-        e.preventDefault();
-        this.setState((prevState) => ({
-            active: false,
-        }));
-        let body = document.getElementsByTagName("body")[0];
-
-        if (body.classList.length === 0) {
-            body.classList.add("modal-active");
-        } else {
-            body.classList.remove("modal-active");
-        }
-    }
-
-    toggleFullScreen = (e) => {
-        if (this.state.active) {
-            return;
-        }
-
-        e.preventDefault();
-        this.setState((prevState) => ({
-            active: true, //!prevState.active
-        }));
-
-        let body = document.getElementsByTagName("body")[0];
-
-        if (body.classList.length === 0) {
-            body.classList.add("modal-active");
-        } else {
-            body.classList.remove("modal-active");
-        }
-    };
-
-    closeModal = () => {
-        this.setState((prevState) => ({
-            active: false,
-        }));
-    };
 
     componentDidMount() {
         // const animated = document.querySelector(".recording-margin");

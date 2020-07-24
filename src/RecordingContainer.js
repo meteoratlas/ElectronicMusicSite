@@ -140,6 +140,9 @@ class RecordingContainer extends Component {
             showModal: true,
         });
     };
+    onCloseModal = () => {
+        this.setState({ showModal: false });
+    };
 
     render() {
         const cards = _.chunk(this.initRecordings, 5);
@@ -148,6 +151,7 @@ class RecordingContainer extends Component {
                 <RecordingModal
                     {...this.state.selectedRecording}
                     show={this.state.showModal}
+                    close={this.onCloseModal}
                 />
 
                 <SortMenu
