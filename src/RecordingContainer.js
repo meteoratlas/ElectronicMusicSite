@@ -67,7 +67,7 @@ class RecordingContainer extends Component {
             recordings: this.initRecordings,
             currentSort: 0,
         }));
-        this.animate();
+        // this.animate();
     }
 
     handleDateDescendingButton() {
@@ -76,7 +76,7 @@ class RecordingContainer extends Component {
             recordings: this.reversed,
             currentSort: 1,
         }));
-        this.animate();
+        // this.animate();
     }
 
     handleAlphabeticalTitleButton() {
@@ -85,7 +85,7 @@ class RecordingContainer extends Component {
             recordings: this.titleSorted,
             currentSort: 2,
         }));
-        this.animate();
+        // this.animate();
     }
 
     handleAlphabeticalArtistButton() {
@@ -94,7 +94,7 @@ class RecordingContainer extends Component {
             recordings: this.artistSorted,
             currentSort: 3,
         }));
-        this.animate();
+        // this.animate();
     }
 
     animate() {
@@ -145,7 +145,7 @@ class RecordingContainer extends Component {
     };
 
     render() {
-        const cards = _.chunk(this.initRecordings, 5);
+        const cards = _.chunk(this.state.recordings, 5);
         return (
             <div className="recordingContainer">
                 <RecordingModal

@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal } from "react-bootstrap";
+import { Modal, Row, Col, Container } from "react-bootstrap";
 import AnimatedHeadline from "./AnimatedHeadline";
 
 const RecordingModal = (props) => {
@@ -21,31 +21,42 @@ const RecordingModal = (props) => {
         >
             <Modal.Header closeButton></Modal.Header>
             <div className="modal-popup" style={divStyle}>
-                <div className="modal-titles">
-                    <AnimatedHeadline
-                        headline={props.artist}
-                        headSize="h1"
-                    ></AnimatedHeadline>
-                    <AnimatedHeadline
-                        headline={props.title}
-                        headSize="h2"
-                    ></AnimatedHeadline>
-                    <h3>{props.year}</h3>
-                    <hr />
-                </div>
                 <div className="modal-container ">
-                    <p className="rec-description">{props.description}</p>
-                    <div className="youtube-wrapper">
-                        <iframe
-                            title="YouTube Video"
-                            width="560"
-                            height="315"
-                            src={props.youtube}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        ></iframe>
+                    <div className="modal-titles">
+                        <AnimatedHeadline
+                            headline={props.artist}
+                            headSize="h1"
+                        ></AnimatedHeadline>
+                        <AnimatedHeadline
+                            headline={props.title}
+                            headSize="h2"
+                        ></AnimatedHeadline>
+                        <h3>{props.year}</h3>
+                        <hr />
                     </div>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <p className="rec-description">
+                                    {props.description}
+                                </p>
+                            </Col>
+                            <Col>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe
+                                        class="embed-responsive-item"
+                                        title="YouTube Video"
+                                        width="560"
+                                        height="315"
+                                        src={props.youtube}
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                    ></iframe>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
             </div>
         </Modal>
