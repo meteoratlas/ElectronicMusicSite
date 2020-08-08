@@ -14,6 +14,7 @@ const RecordingModal = (props) => {
     };
     return (
         <Modal
+            fluid
             centered
             show={props.show}
             onHide={props.close}

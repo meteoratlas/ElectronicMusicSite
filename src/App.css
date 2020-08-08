@@ -345,7 +345,7 @@ h6 {
 }
 
 .modal-dialog {
-    max-width: 90%;
+    max-width: 60%;
 }
 
 /*
@@ -488,21 +488,15 @@ canvas {
         padding-right: 0;
     }
 
-    .modal-popup {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    .modal-dialog {
+        max-width: 100%;
         max-height: 100%;
-        transform: none;
-        animation-name: none;
-        border: none;
     }
 
+    /*
     .modal-titles {
         padding-bottom: 0.2em;
-    }
+    } */
 
     .modal-titles h1 {
         font-size: 2em;
@@ -511,16 +505,6 @@ canvas {
     .modal-titles h2,
     h3 {
         font-size: 1em;
-    }
-
-    .rec-description {
-        display: block;
-        width: 100%;
-        font-size: 0.95em;
-    }
-    .youtube-wrapper {
-        display: block;
-        width: 100%;
     }
 
     .youtube-wrapper iframe {
