@@ -28,12 +28,11 @@ class Recording extends PureComponent {
 
     render() {
         return (
-            <Card className="mt-10" bg={"dark"} onClick={this.props.clicked}>
+            <Card bg={"dark"} onClick={this.props.clicked}>
                 <Card.Img variant="top" src={this.props.imgSrc} />
                 <Card.Body>
                     <Card.Title>{this.props.artist}</Card.Title>
                     <Card.Text>{this.props.title}</Card.Text>
-                    {/* <Button variant="primary">Go somewhere</Button> */}
                 </Card.Body>
             </Card>
         );

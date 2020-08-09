@@ -161,9 +161,9 @@ class RecordingContainer extends Component {
                     artistAlph={this.handleAlphabeticalArtistButton.bind(this)}
                 />
                 <CardGroup>
-                    {cards.map((rec, i) => {
+                    {cards.map((rec) => {
                         return (
-                            <Row lg={5} sm={2}>
+                            <Row className="h-100" lg={5} sm={2}>
                                 {rec.map((el) => (
                                     <Col>{el}</Col>
                                 ))}
