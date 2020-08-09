@@ -114,16 +114,11 @@ a {
 }
 
 .card {
-    width: calc(20% - 8px);
     box-sizing: border-box;
     font-family: "Major Mono Display";
     margin-right: 8px;
     cursor: pointer;
-}
-
-.card:last-child {
-    width: 20%;
-    margin-right: 0;
+    height: 100%;
 }
 
 .container-fluid {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import _ from "lodash";
-import { Container, CardGroup, Row } from "react-bootstrap";
+import { CardGroup, Row, Col } from "react-bootstrap";
 
 import Recording from "./Recording";
 import Data from "./data.json";
@@ -162,7 +162,13 @@ class RecordingContainer extends Component {
                 />
                 <CardGroup>
                     {cards.map((rec, i) => {
-                        return <Row>{rec}</Row>;
+                        return (
+                            <Row lg={5} sm={2}>
+                                {rec.map((el) => (
+                                    <Col>{el}</Col>
+                                ))}
+                            </Row>
+                        );
                     })}
                 </CardGroup>
             </div>
