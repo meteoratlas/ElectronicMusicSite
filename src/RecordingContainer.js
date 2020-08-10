@@ -37,7 +37,7 @@ class RecordingContainer extends Component {
         this.setState({
             recordings: this.initRecordings,
         });
-        this.elements = document.querySelector(".container-fluid");
+        this.elements = document.querySelector(".card-group");
     }
 
     populateRecordings() {
@@ -67,7 +67,7 @@ class RecordingContainer extends Component {
             recordings: this.initRecordings,
             currentSort: 0,
         }));
-        // this.animate();
+        this.animate();
     }
 
     handleDateDescendingButton() {
@@ -76,7 +76,7 @@ class RecordingContainer extends Component {
             recordings: this.reversed,
             currentSort: 1,
         }));
-        // this.animate();
+        this.animate();
     }
 
     handleAlphabeticalTitleButton() {
@@ -85,7 +85,7 @@ class RecordingContainer extends Component {
             recordings: this.titleSorted,
             currentSort: 2,
         }));
-        // this.animate();
+        this.animate();
     }
 
     handleAlphabeticalArtistButton() {
@@ -94,13 +94,13 @@ class RecordingContainer extends Component {
             recordings: this.artistSorted,
             currentSort: 3,
         }));
-        // this.animate();
+        this.animate();
     }
 
     animate() {
-        this.elements.className = "rec-grid";
+        this.elements.className = "card-group";
         void this.elements.offsetWidth;
-        this.elements.className = "rec-grid animate-in";
+        this.elements.className = "card-group animate-in";
     }
 
     sortByDateAscending(a, b) {
@@ -161,11 +161,16 @@ class RecordingContainer extends Component {
                     artistAlph={this.handleAlphabeticalArtistButton.bind(this)}
                 />
                 <CardGroup>
-                    {cards.map((rec) => {
+                    {cards.map((rec, i) => {
                         return (
-                            <Row className="h-100" lg={5} sm={2}>
-                                {rec.map((el) => (
-                                    <Col>{el}</Col>
+                            <Row
+                                key={"row-" + i}
+                                className="h-100"
+                                lg={5}
+                                sm={2}
+                            >
+                                {rec.map((el, j) => (
+                                    <Col key={"col-" + j}>{el}</Col>
                                 ))}
                             </Row>
                         );
