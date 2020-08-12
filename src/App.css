@@ -104,13 +104,29 @@ a {
     Page Layout
 */
 
-.recordingContainer {
-    max-width: 70%;
-    height: 100%;
+.card-group {
+    width: 70%;
     margin: 0 auto;
+}
+
+.row {
+    /* margin-bottom: 8px;
+    height: 100%; */
+}
+
+.card {
+    box-sizing: border-box;
+    font-family: "Major Mono Display";
+    margin-right: 8px;
+    cursor: pointer;
+    /* height: 100%; */
+    height: calc(100% - 15px);
+    margin-bottom: 15px;
+    align-items: stretch;
+}
+
+.container-fluid {
     padding: 0;
-    overflow: auto;
-    z-index: -1;
 }
 
 .recording-margin {
@@ -135,8 +151,11 @@ a {
 }
 
 .recording {
-    background: linear-gradient(130deg, #575677, #091224);
-    min-height: 370px;
+    /* background: linear-gradient(130deg, #575677, #091224); */
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: "Major Mono Display", monospace;
+    font-weight: 700;
+    min-height: 380px;
     max-height: 500px;
     cursor: pointer;
     /*filter: drop-shadow(4px 4px 2px black);*/
@@ -172,6 +191,11 @@ a {
     Menus
 */
 
+.sort-menu {
+    width: calc(70% + 30px);
+    margin: 0 auto;
+}
+
 .sort-menu h1 {
     font-size: 1.5em;
     padding: 0.5em 0.25em;
@@ -196,7 +220,7 @@ a {
 }
 
 .sort-menu button:hover:nth-child(2n) {
-    background-color: rgb(109, 39, 39);
+    background-color: rgb(109, 39, 39, 1);
 }
 
 .sort-menu button:hover:nth-child(3n) {
@@ -233,12 +257,12 @@ a {
 }
 
 .modal-popup {
-    width: 80%;
+    /* width: 80%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    animation-duration: 0.4s;
+    transform: translate(-50%, -50%); */
+    animation-duration: 0s;
     animation-name: transformIn;
     border: 5px #eee solid;
     /*max-height: 80%;*/
@@ -319,18 +343,21 @@ h6 {
     background-size: cover;
 }
 
+.modal-dialog {
+    max-width: 60%;
+}
+
 /*
     Page Bottom
 */
 
 .credits {
     color: #111;
-    padding: 2.4em;
+    padding: 2.8em;
     margin: 2em auto 2em auto;
     list-style-position: inside;
-    width: 25%;
+    width: 40%;
     border: 50px solid saddlebrown;
-    border-image: url("/ElectronicMusicSite/img/waveform.png") fill 30% 15%;
 }
 
 .credits h2 {
@@ -356,6 +383,7 @@ h6 {
     min-width: 100%;
     cursor: pointer;
     text-align: center;
+    z-index: -99;
 }
 
 .page-bottom h3 {
@@ -366,6 +394,13 @@ h6 {
 /*
     Animation
 */
+
+canvas {
+    position: fixed;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+}
 
 @keyframes transformIn {
     from {
@@ -422,7 +457,7 @@ h6 {
     }
 
     .recordingContainer {
-        max-width: 70%;
+        max-width: 90%;
         height: 100%;
         margin: 0 auto;
         padding: 0;
@@ -434,6 +469,11 @@ h6 {
         min-width: 100%;
         min-height: 48px;
         margin-bottom: 0;
+    }
+
+    .card-group {
+        width: 90%;
+        /* margin: 0 auto; */
     }
 
     .recording-margin:nth-child(5n + 1) {
@@ -452,21 +492,15 @@ h6 {
         padding-right: 0;
     }
 
-    .modal-popup {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    .modal-dialog {
+        max-width: 100%;
         max-height: 100%;
-        transform: none;
-        animation-name: none;
-        border: none;
     }
 
+    /*
     .modal-titles {
         padding-bottom: 0.2em;
-    }
+    } */
 
     .modal-titles h1 {
         font-size: 2em;
@@ -475,16 +509,6 @@ h6 {
     .modal-titles h2,
     h3 {
         font-size: 1em;
-    }
-
-    .rec-description {
-        display: block;
-        width: 100%;
-        font-size: 0.95em;
-    }
-    .youtube-wrapper {
-        display: block;
-        width: 100%;
     }
 
     .youtube-wrapper iframe {

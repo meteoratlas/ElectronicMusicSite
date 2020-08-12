@@ -1,13 +1,21 @@
 import React, { Component } from "react";
+import _ from "lodash";
+import { CardGroup, Row, Col } from "react-bootstrap";
 
 import Recording from "./Recording";
 import Data from "./data.json";
 import SortMenu from "./SortMenu";
+import RecordingModal from "./Modal";
 
 class RecordingContainer extends Component {
     constructor(props) {
         super(props);
-        this.state = { recordings: [], currentSort: 0 };
+        this.state = {
+            recordings: [],
+            currentSort: 0,
+            showModal: false,
+            selectedRecording: Data.recordings[0],
+        };
         this.sortingOptions = {
             DATE_ASCENDING: 0,
             DATE_DESCENDING: 1,
@@ -29,26 +37,24 @@ class RecordingContainer extends Component {
         this.setState({
             recordings: this.initRecordings,
         });
-        this.elements = document.getElementsByClassName("rec-grid")[0];
+        this.elements = document.querySelector(".card-group");
     }
 
     populateRecordings() {
         for (let i = 0; i < Data.recordings.length; i++) {
+            const rec = Data.recordings[i];
             this.initRecordings.push(
                 <Recording
-                    key={Data.recordings[i].year}
-                    artist={Data.recordings[i].artist}
-                    title={Data.recordings[i].title}
-                    year={Data.recordings[i].year}
+                    key={rec.year}
+                    artist={rec.artist}
+                    title={rec.title}
+                    year={rec.year}
                     // https://stackoverflow.com/questions/37644265/correct-path-for-img-on-react-js
-                    imgSrc={
-                        process.env.PUBLIC_URL +
-                        "/img/" +
-                        Data.recordings[i].image
-                    }
-                    youtube={Data.recordings[i].youtube}
-                    description={Data.recordings[i].description}
+                    imgSrc={process.env.PUBLIC_URL + "/img/" + rec.image}
+                    youtube={rec.youtube}
+                    description={rec.description}
                     offset={i + 1}
+                    clicked={() => this.onRecordingClicked(i)}
                 />
             );
         }
@@ -92,9 +98,9 @@ class RecordingContainer extends Component {
     }
 
     animate() {
-        this.elements.className = "rec-grid";
+        this.elements.className = "card-group";
         void this.elements.offsetWidth;
-        this.elements.className = "rec-grid animate-in";
+        this.elements.className = "card-group animate-in";
     }
 
     sortByDateAscending(a, b) {
@@ -128,16 +134,48 @@ class RecordingContainer extends Component {
         return 0;
     }
 
+    onRecordingClicked = (rec) => {
+        this.setState({
+            selectedRecording: Data.recordings[rec],
+            showModal: true,
+        });
+    };
+    onCloseModal = () => {
+        this.setState({ showModal: false });
+    };
+
     render() {
+        const cards = _.chunk(this.state.recordings, 5);
         return (
             <div className="recordingContainer">
+                <RecordingModal
+                    {...this.state.selectedRecording}
+                    show={this.state.showModal}
+                    close={this.onCloseModal}
+                />
+
                 <SortMenu
                     dateAsc={this.handleDateAscendingButton.bind(this)}
                     dateDes={this.handleDateDescendingButton.bind(this)}
                     titleAlph={this.handleAlphabeticalTitleButton.bind(this)}
                     artistAlph={this.handleAlphabeticalArtistButton.bind(this)}
                 />
-                <div className="rec-grid">{this.state.recordings}</div>
+                <CardGroup>
+                    {cards.map((rec, i) => {
+                        return (
+                            <Row
+                                key={"row-" + i}
+                                className="h-100"
+                                lg={5}
+                                sm={2}
+                            >
+                                {rec.map((el, j) => (
+                                    <Col key={"col-" + j}>{el}</Col>
+                                ))}
+                            </Row>
+                        );
+                    })}
+                </CardGroup>
             </div>
         );
     }

@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import { Link/*, animateScroll as scroll*/ } from "react-scroll";
+import React, { Component } from "react";
+import { Link } from "react-scroll";
 
 class PageBottom extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = {};
     }
-    render() { 
-        return (   
+    render() {
+        return (
             <Link
                 activeClass="active"
                 to="header"
@@ -16,15 +16,12 @@ class PageBottom extends Component {
                 offset={-70}
                 duration={500}
             >
-
                 <div className="page-bottom">
-                <h3>Return to top</h3>
+                    <h3>Return to top</h3>
                 </div>
-
             </Link>
-            
-         );
+        );
     }
 }
- 
+
 export default PageBottom;
